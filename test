@@ -1,0 +1,6 @@
+What does this statement mean?
+
+git push origin master
+
+This statement means that you are prepared to push something to the remote repository. 
+This will take your local commit that you make and upload it to the remote github server. 
