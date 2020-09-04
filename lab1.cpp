@@ -15,9 +15,20 @@ using namespace std;
 
 bool checkDoubleLetters(string str);
 
-int main() {
-    string str1;
-    do {
+int main(int argc, char * argv[]) {
+string str1;
+
+#ifdef UNIT_TEST
+	cout << "aardvark: "  << boolalpha << checkDoubleLetters("aardvark") << endl;	
+	cout << "book: " <<  boolalpha << checkDoubleLetters("book") << endl;
+	cout << "fall: " << boolalpha << checkDoubleLetters("fall") << endl;
+	cout << "test: " << boolalpha << checkDoubleLetters("test") << endl;
+	cout << "moosoho: " << boolalpha << checkDoubleLetters("mooshoo") << endl;
+	cout << "this is a unit test: " << boolalpha << checkDoubleLetters("this is a unit test") << endl;
+	return 0;
+#endif
+	
+	do {
         cout << "Please enter a word: ";
         cin >> str1;
         checkDoubleLetters(str1);
